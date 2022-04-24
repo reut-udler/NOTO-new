@@ -3,6 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 const cors = require("cors");
+require("dotenv").config();
 
 const usersRouter = require("./routes/usersRout");
 const authRouter = require("./routes/auth");
@@ -11,8 +12,7 @@ const bizRouter = require("./routes/bizRout");
 
 mongoose
   .connect(
-    process.env.MONGODB_URI ||
-      "mongodb+srv://reutudler:eJ53Guyvm7ySeMra@notodb.s9aba.mongodb.net/notodb?retryWrites=true&w=majority"
+    "mongodb+srv://reutudler:reutudler@noto.4pllr.mongodb.net/NOTO?retryWrites=true&w=majority"
   )
   .then(() => {
     console.log("connected to mongo");
