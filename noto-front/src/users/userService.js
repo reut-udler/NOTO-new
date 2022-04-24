@@ -1,7 +1,7 @@
 import http from "../services/httpService";
 import jwtDecode from "jwt-decode";
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 const apiUrl = `http://localhost:${PORT}/api`;
 
 const TOKEN_KEY = "token";
