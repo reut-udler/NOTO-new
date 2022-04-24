@@ -1,6 +1,5 @@
 import http from "../services/httpService";
 import jwtDecode from "jwt-decode";
-/* import { apiUrl } from "../config.json"; */
 
 const PORT = process.env.PORT || 8080;
 const apiUrl = `http://localhost:${PORT}/api`;

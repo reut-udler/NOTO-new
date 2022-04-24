@@ -1,5 +1,4 @@
 import http from "../services/httpService";
-/* import { apiUrl } from "../config.json"; */
 
 const PORT = process.env.PORT || 8080;
 const apiUrl = `http://localhost:${PORT}/api`;
