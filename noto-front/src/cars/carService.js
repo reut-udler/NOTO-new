@@ -1,6 +1,6 @@
 import http from "../services/httpService";
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3001;
 const apiUrl = `http://localhost:${PORT}/api`;
 
 export function createNewCar(car) {
