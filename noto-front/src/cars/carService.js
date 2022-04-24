@@ -1,5 +1,8 @@
 import http from "../services/httpService";
-import { apiUrl } from "../config.json";
+/* import { apiUrl } from "../config.json"; */
+
+const PORT = process.env.PORT || 8080;
+const apiUrl = `http://localhost:${PORT}/api`;
 
 export function createNewCar(car) {
   return http.post(`${apiUrl}/cars`, car);

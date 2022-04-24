@@ -1,6 +1,9 @@
 import http from "../services/httpService";
-import { apiUrl } from "../config.json";
 import jwtDecode from "jwt-decode";
+/* import { apiUrl } from "../config.json"; */
+
+const PORT = process.env.PORT || 8080;
+const apiUrl = `http://localhost:${PORT}/api`;
 
 const TOKEN_KEY = "token";
 http.setDefaultCommonHeader("x-auth-token", getJwt());

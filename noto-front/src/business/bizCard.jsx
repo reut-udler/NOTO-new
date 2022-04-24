@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 const BizCard = (props) => {
   let [hart, setHart] = useState(false);
   let bizId = props.bizCard._id;
-  const data = `http://localhost:8080/api/biz/${bizId}/bizImage`;
+  const PORT = process.env.PORT || 8080;
+  const data = `http://localhost:${PORT}/api/biz/${bizId}/bizImage`;
   const BizImage = () => <img src={data} alt="business-img" />;
 
   useEffect(() => {
