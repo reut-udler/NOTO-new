@@ -116,7 +116,6 @@ router.put(
 
 /////// show all biz cards //////
 router.get("/", async (req, res) => {
-  console.log(process.env.PORT);
   try {
     const bizCards = await BizCard.find();
     res.set("Content-Type", "multipart/form-data");
