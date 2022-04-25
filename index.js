@@ -35,6 +35,6 @@ app.use("/api/cars", carsRouter);
 app.use("/api/biz", bizRouter);
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`connected on port ${PORT}`);
 });
