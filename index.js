@@ -34,7 +34,7 @@ app.use("/api/auth", authRouter);
 app.use("/api/cars", carsRouter);
 app.use("/api/biz", bizRouter);
 
-const port = process.env.PORT || 3001;
-app.listen(port, "0.0.0.0", () => {
-  console.log(`connected on port ${port}`);
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`connected on port ${PORT}`);
 });
