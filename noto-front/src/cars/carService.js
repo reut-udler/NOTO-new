@@ -1,6 +1,6 @@
 import http from "../services/httpService";
 
-const PORT = process.env.PORT || 5000;
+const PORT = "https://noto-app-udler.herokuapp.com/" || 5000;
 const apiUrl = `http://localhost:${PORT}/api`;
 
 export function createNewCar(car) {
