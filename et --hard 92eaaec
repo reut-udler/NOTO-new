@@ -1,0 +1,22 @@
+[33mc4d8a36[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31mheroku/main[m[33m)[m HEAD@{0}: commit: test
+[33mcf710a9[m HEAD@{1}: commit: test
+[33mbb4f38e[m HEAD@{2}: commit: test
+[33mf357dec[m HEAD@{3}: commit: test
+[33m55fa84e[m HEAD@{4}: commit: test
+[33m335a3b9[m HEAD@{5}: commit: test
+[33m83435b8[m HEAD@{6}: commit: test
+[33m2bc6b1e[m HEAD@{7}: commit: test2
+[33mba1dd26[m HEAD@{8}: commit: test
+[33m92eaaec[m HEAD@{9}: commit: clean up
+[33m8645b54[m HEAD@{10}: commit: updating port
+[33me31d161[m HEAD@{11}: commit: conecting mongodb atlas
+[33mfb9eb52[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mform-component[m[33m)[m HEAD@{12}: checkout: moving from expenses-page to main
+[33m242c17a[m[33m ([m[1;32mexpenses-page[m[33m)[m HEAD@{13}: checkout: moving from main to expenses-page
+[33mfb9eb52[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mform-component[m[33m)[m HEAD@{14}: checkout: moving from form-component to main
+[33mfb9eb52[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mform-component[m[33m)[m HEAD@{15}: checkout: moving from main to form-component
+[33mfb9eb52[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mform-component[m[33m)[m HEAD@{16}: checkout: moving from expenses-page to main
+[33m242c17a[m[33m ([m[1;32mexpenses-page[m[33m)[m HEAD@{17}: commit: fixing create expense
+[33m41255cb[m HEAD@{18}: commit: some changes in expenses page
+[33mfb9eb52[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mform-component[m[33m)[m HEAD@{19}: checkout: moving from main to expenses-page
+[33mfb9eb52[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mform-component[m[33m)[m HEAD@{20}: Branch: renamed refs/heads/master to refs/heads/main
+[33mfb9eb52[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mform-component[m[33m)[m HEAD@{22}: commit (initial): first commit - new repository
