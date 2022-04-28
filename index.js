@@ -1,9 +1,10 @@
 const express = require("express");
 const app = express();
+const path = require("path");
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 const cors = require("cors");
-require("dotenv").config();
+require("dotenv").config({ path: "./config.env" });
 
 const usersRouter = require("./routes/usersRout");
 const authRouter = require("./routes/auth");
@@ -23,10 +24,18 @@ mongoose
 
 app.use(cors());
 app.use(morgan("dev"));
-
 app.use(express.json());
+
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("noto-front/build"));
+  app.use(express.static(path.join(__dirname, "noto-front/build")));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "noto-front", "build", "index.html"));
+  });
+} else {
+  app.get("/", (req, res) => {
+    res.send("running on development mode");
+  });
 }
 
 app.use("/api/users", usersRouter);
