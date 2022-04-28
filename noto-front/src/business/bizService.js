@@ -1,7 +1,6 @@
 import http from "../services/httpService";
 
-const PORT = process.env.PORT || 8080;
-const apiUrl = `http://localhost:${PORT}/api`;
+const apiUrl = "https://noto-app-udler.herokuapp.com";
 
 export function getAllBizCards() {
   return http.get(`${apiUrl}/biz`);

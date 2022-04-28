@@ -34,6 +34,7 @@ if (process.env.NODE_ENV === "production") {
   });
 } else {
   app.get("/", (req, res) => {
+    console.log("running on development mode");
     res.send("running on development mode");
   });
 }

@@ -1,8 +1,7 @@
 import http from "../services/httpService";
 import jwtDecode from "jwt-decode";
 
-const PORT = process.env.PORT || 8080;
-const apiUrl = `http://localhost:${PORT}/api`;
+const apiUrl = "https://noto-app-udler.herokuapp.com";
 
 const TOKEN_KEY = "token";
 http.setDefaultCommonHeader("x-auth-token", getJwt());

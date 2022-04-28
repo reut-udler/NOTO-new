@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node .",
     "dev": "nodemon .",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix noto-front && npm run build --prefix noto-front"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd noto-front && npm install --perfix noto-front && npm run build --prefix noto-front"
   },
   "keywords": [],
   "author": "",
