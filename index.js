@@ -16,7 +16,7 @@ mongoose
     "mongodb+srv://reutudler:reutudler@noto.4pllr.mongodb.net/NOTO?retryWrites=true&w=majority"
   )
   .then(() => {
-    console.log("connected to mongo");
+    console.log("connected to mongodb");
   })
   .catch((err) => {
     console.log("faild to connect to mongo server", err);
@@ -34,7 +34,6 @@ if (process.env.NODE_ENV === "production") {
   });
 } else {
   app.get("/", (req, res) => {
-    console.log("running on development mode");
     res.send("running on development mode");
   });
 }
