@@ -3,7 +3,7 @@ import jwtDecode from "jwt-decode";
 
 const apiUrl =
   //"http://localhost:3000/api";
-  "https://noto-app-udler.herokuapp.com";
+  "https://noto-app-udler.herokuapp.com/api";
 
 const TOKEN_KEY = "token";
 http.setDefaultCommonHeader("x-auth-token", getJwt());
