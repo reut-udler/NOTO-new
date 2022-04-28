@@ -39,12 +39,12 @@ class App extends Component {
     return (
       <div
         className="App d-flex flex-column min-vh-100"
-        style={{
+        /* style={{
           backgroundImage: `url(${background})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-        }}
+        }} */
       >
         <header>
           <Navbar user={user} />
