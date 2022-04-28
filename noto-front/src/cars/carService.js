@@ -1,7 +1,6 @@
 import http from "../services/httpService";
 
-const PORT = "https://noto-app-udler.herokuapp.com/" || 5000;
-const apiUrl = `http://localhost:${PORT}/api`;
+const apiUrl = "https://noto-app-udler.herokuapp.com/";
 
 export function createNewCar(car) {
   return http.post(`${apiUrl}/cars`, car);
