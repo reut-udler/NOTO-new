@@ -2,7 +2,7 @@ import http from "../services/httpService";
 
 const apiUrl =
   //"http://localhost:3000/api";
-  "http://noto-app-udler.herokuapp.com/api";
+  "https://noto-app-udler.herokuapp.com/api";
 
 export function getAllBizCards() {
   return http.get(`${apiUrl}/biz`);
