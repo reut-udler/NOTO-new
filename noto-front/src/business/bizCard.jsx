@@ -4,8 +4,10 @@ import { useEffect, useState } from "react";
 const BizCard = (props) => {
   let [hart, setHart] = useState(false);
   let bizId = props.bizCard._id;
-  const PORT = process.env.PORT || 5000;
-  const data = `http://localhost:${PORT}/api/biz/${bizId}/bizImage`;
+
+  const apiUrl = "http://localhost:3000";
+  // "https://noto-app-udler.herokuapp.com";
+  const data = `${apiUrl}/api/biz/${bizId}/bizImage`;
   const BizImage = () => <img src={data} alt="business-img" />;
 
   useEffect(() => {
