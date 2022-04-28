@@ -30,7 +30,9 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "noto-front/build")));
 
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "noto-front", "build", "index.html"));
+    res.setTimeout(29000, () => {
+      res.sendFile(path.join(__dirname, "noto-front", "build", "index.html"));
+    });
   });
 } else {
   app.get("/", (req, res) => {
