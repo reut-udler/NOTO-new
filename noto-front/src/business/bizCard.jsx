@@ -7,7 +7,7 @@ const BizCard = (props) => {
 
   const apiUrl =
     //"http://localhost:3000";
-    "https://noto-app-udler.herokuapp.com/api";
+    "https://noto-app-udler.herokuapp.com";
   const data = `${apiUrl}/api/biz/${bizId}/bizImage`;
   const BizImage = () => <img src={data} alt="business-img" />;
 
