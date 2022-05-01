@@ -5,7 +5,7 @@ const BizCard = (props) => {
   let [hart, setHart] = useState(false);
   let bizId = props.bizCard._id;
 
-  const apiUrl = process.env.REACT_APP_API_URL;
+  const apiUrl = process.env.REACT_APP_API_URL + "/api";
   const data = `${apiUrl}/biz/${bizId}/bizImage`;
   const BizImage = () => <img src={data} alt="business-img" />;
 

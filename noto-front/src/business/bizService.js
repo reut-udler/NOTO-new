@@ -1,6 +1,6 @@
 import http from "../services/httpService";
 
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = process.env.REACT_APP_API_URL + "/api";
 
 export function getAllBizCards() {
   return http.get(`${apiUrl}/biz`);

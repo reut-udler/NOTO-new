@@ -1,7 +1,7 @@
 import http from "../services/httpService";
 import jwtDecode from "jwt-decode";
 
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = process.env.REACT_APP_API_URL + "/api";
 
 const TOKEN_KEY = "token";
 http.setDefaultCommonHeader("x-auth-token", getJwt());
