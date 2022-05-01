@@ -9,6 +9,9 @@
     "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix noto-front && npm run build --prefix noto-front"
   },
+  "engines": {
+    "node": "^17.3.1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
