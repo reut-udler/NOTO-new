@@ -5,10 +5,8 @@ const BizCard = (props) => {
   let [hart, setHart] = useState(false);
   let bizId = props.bizCard._id;
 
-  const apiUrl =
-    //"http://localhost:3000";
-    "https://noto-app-udler.herokuapp.com";
-  const data = `${apiUrl}/api/biz/${bizId}/bizImage`;
+  const apiUrl = process.env.REACT_APP_API_URL;
+  const data = `${apiUrl}/biz/${bizId}/bizImage`;
   const BizImage = () => <img src={data} alt="business-img" />;
 
   useEffect(() => {

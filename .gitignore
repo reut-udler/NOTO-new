@@ -1,5 +1,7 @@
 /node_modules
-/test.http
 /noto-front/node_modules
-/config/default.json
 
+/config.env
+/noto-front/.env
+
+/test.http

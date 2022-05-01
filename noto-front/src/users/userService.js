@@ -1,9 +1,7 @@
 import http from "../services/httpService";
 import jwtDecode from "jwt-decode";
 
-const apiUrl =
-  //"http://localhost:3000/api";
-  "https://noto-app-udler.herokuapp.com/api";
+const apiUrl = process.env.REACT_APP_API_URL;
 
 const TOKEN_KEY = "token";
 http.setDefaultCommonHeader("x-auth-token", getJwt());

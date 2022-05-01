@@ -1,10 +1,10 @@
-import { React, Component } from "react";
+import { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-//import background from "../src/images/karsten-wurth-karsten-wuerth-rafblRbne3o-unsplash.png";
+import background from "../src/images/karsten-wurth-karsten-wuerth-rafblRbne3o-unsplash.png";
 import Navbar from "./common/navbar";
 import Home from "./pages/home";
 import Footer from "./common/footer";
@@ -31,6 +31,7 @@ class App extends Component {
   componentDidMount() {
     const user = userService.getCurrentUser();
     this.setState({ user });
+    console.log(process.env.REACT_APP_API_URL);
   }
 
   render() {
@@ -39,12 +40,12 @@ class App extends Component {
     return (
       <div
         className="App d-flex flex-column min-vh-100"
-        /* style={{
+        style={{
           backgroundImage: `url(${background})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-        }} */
+        }}
       >
         <header>
           <Navbar user={user} />

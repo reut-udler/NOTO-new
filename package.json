@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon .",
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix noto-front && npm run build --prefix noto-front"
   },
   "keywords": [],
@@ -31,6 +32,7 @@
     "sharp": "^0.29.3"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "nodemon": "^2.0.12"
   }
 }

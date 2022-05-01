@@ -12,9 +12,7 @@ const carsRouter = require("./routes/carsRout");
 const bizRouter = require("./routes/bizRout");
 
 mongoose
-  .connect(
-    "mongodb+srv://reutudler:reutudler@noto.4pllr.mongodb.net/NOTO?retryWrites=true&w=majority"
-  )
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log("connected to mongodb");
   })
@@ -28,7 +26,6 @@ app.use(express.json());
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "noto-front/build")));
-
   app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "noto-front", "build", "index.html"));
   });
@@ -43,7 +40,7 @@ app.use("/api/auth", authRouter);
 app.use("/api/cars", carsRouter);
 app.use("/api/biz", bizRouter);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
-  console.log(`connected on port ${PORT}`);
+  console.log(`connected on port ${PORT} in mode:`, process.env.NODE_ENV);
 });
