@@ -121,8 +121,11 @@ class BizPage extends Component {
 
             <div className="row p-5 ">
               <div className="col-md-5 p-1 d-flex justify-content-center">
-                <label htmlFor="bizName">חיפוש לפי שם העסק</label>
+                <label className="findLabel" htmlFor="bizName">
+                  חיפוש לפי שם העסק
+                </label>
                 <input
+                  placeholder="חיפוש לפי שם העסק"
                   ref={this.userInputName}
                   type="text"
                   name="inputBizName"
@@ -138,8 +141,11 @@ class BizPage extends Component {
                 </button>
               </div>
               <div className="col-md-5 p-1 d-flex justify-content-center">
-                <label htmlFor="bizName">חיפוש לפי קטגוריה</label>
+                <label htmlFor="bizName" className="findLabel">
+                  חיפוש לפי קטגוריה
+                </label>
                 <input
+                  placeholder="חיפוש לפי קטגוריה"
                   ref={this.userInputCategory}
                   type="text"
                   name="inputBizCategory"
