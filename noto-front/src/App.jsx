@@ -4,7 +4,7 @@ import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-import background from "../src/images/karsten-wurth-karsten-wuerth-rafblRbne3o-unsplash.png";
+import background from "../src/images/background1.png";
 import Navbar from "./common/navbar";
 import Home from "./pages/home";
 import Footer from "./common/footer";
