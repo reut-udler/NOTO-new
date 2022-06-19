@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import Input from "./input";
+import React, { Component, Fragment } from "react";
+import { Input } from "./input";
 import Joi from "joi";
 
 class Form extends Component {
@@ -121,6 +121,10 @@ class Form extends Component {
   //save button
   renderButton(label) {
     return <button className="btn btn-primary">{label}</button>;
+  }
+
+  render() {
+    return <Fragment></Fragment>;
   }
 }
 

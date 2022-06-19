@@ -1,6 +1,8 @@
+import Joi from "joi";
+
 import Form from "../common/form";
 import carService from "./carService";
-import Joi from "joi";
+import BuyingInfo from "./buyingInfo";
 
 class EditCar extends Form {
   state = {
@@ -90,6 +92,8 @@ class EditCar extends Form {
                 {this.renderInput("manufacturer", "יצרן")}
                 {this.renderInput("model", "מודל")}
                 {this.renderInput("manYear", "שנת ייצור")}
+                <BuyingInfo />
+
                 <div className="col-md-4 mx-auto my-5 text-center">
                   {this.renderButton("שמור")}
 
